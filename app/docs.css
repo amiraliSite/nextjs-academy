@@ -328,6 +328,7 @@
   box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
 }
 .bullets li code, .topic-section p code {
+  overflow-wrap: break-word;
   font-family: var(--font-code);
   font-size: 0.85em;
   background: var(--panel-strong);
@@ -456,10 +457,13 @@
   .sidebar-title { display: none; }
   .sb-part { display: none; }
   .sb-link { flex: none; }
+  .sb-item { flex: none; width: auto; }
+  .sidebar { align-items: center; }
   .sb-link .sb-num { display: none; }
   .showcase-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 @media (max-width: 640px) {
+  .search-box input { font-size: 16px; }  /* prevent iOS focus zoom */
   .pn-grid { grid-template-columns: 1fr; }
   .pn-card.next { text-align: start; align-items: flex-start; }
   .hero-ctas .btn { width: 100%; justify-content: center; }

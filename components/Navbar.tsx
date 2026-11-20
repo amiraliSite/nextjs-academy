@@ -79,7 +79,7 @@ export function Navbar() {
               {theme === "dark" ? <SunIcon /> : <MoonIcon />}
             </button>
             <a
-              className="icon-btn"
+              className="icon-btn nav-gh"
               href="https://github.com/amiraliSite/nextjs-academy"
               target="_blank"
               rel="noopener noreferrer"

@@ -129,7 +129,7 @@ function Sidebar({ active }: { active: string }) {
         const showPart =
           m.part === 1 || topicMeta.find((x) => x.index === m.index - 1)?.part !== m.part;
         return (
-          <div key={m.slug} style={{ width: "100%" }}>
+          <div key={m.slug} className="sb-item">
             {showPart && (
               <p className="sb-part">
                 {t.part_label} {m.part} — {partLabel(m.part, lang)}
